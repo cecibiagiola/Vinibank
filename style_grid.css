@@ -1,0 +1,1217 @@
+* {
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+/*.content{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color:darkmagenta;
+    display: grid;
+    grid-template-rows: 2% 79% 15%;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 5px;
+    grid-row-gap: 2px;*/
+    
+    /* BARRA DE NAVEGACION*/
+
+.header{
+    background-color: #1C1B4D;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #1C1B4D;
+    z-index: 100000;
+    top: 0;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+li a.active, li:hover{
+    background: #B80E65;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 925px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }   
+}   
+
+@media (max-width: 858px){ 
+    
+  
+    .checkbtn{
+        display: block;
+    }
+    .ul-nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1C1B4D;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li.active{
+        background: none;
+        
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+/* FIN BARRA DE NAVEGACION*/
+
+
+/* PORTADA*/
+
+
+  
+.index-main-texto{
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.main__texto{
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+    width: 60%;
+    margin-left: 10%;
+    
+    
+}  
+    
+
+
+.h1__titulo  {
+    display: inline;
+    /*padding: 0px, 0px;*/
+    margin-left: 7%;
+    
+    position: relative;
+    color: #1C1B4D;
+    
+}
+
+.main__parrafo { 
+    margin-top: 1%;
+    margin-left: 5%;
+    position: relative;
+    font-size: medium;
+    color: #1C1B4D;
+    text-align: left;
+    
+    
+}
+    
+    
+   
+    
+.imagen_1 {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10%;
+    width: 60%;
+}
+
+    
+    
+
+
+
+/* ICONOS E INFO DE LOS SERVICIOS*/
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+
+
+    
+.icons_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 25%;
+    border-radius: 3%;
+}
+.icons_1 p{
+    text-align: center;
+}    
+    
+    
+
+.icons_2 {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 25%;
+    border-radius: 3%;
+    
+}
+.icons_2 p{
+    text-align: center;
+}
+
+.icons_3 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 25%;
+    border-radius: 3%;
+}
+
+.icons_3 p{
+    text-align: center;
+}
+
+
+
+
+/*DESCRIPCIÓN DE LA SEGURIDAD DEL SITIO*/
+
+.security{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+    
+    
+    
+    
+   
+    
+.security-title{
+    
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    
+    
+
+
+.security__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    
+    margin-right: 2%;
+    
+    
+}
+
+
+    
+
+
+.icon-security_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+    
+  
+}
+.icon-security_1 p {
+    text-align: center;
+    
+}
+    
+
+
+.icon-security_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.icon-security_2 p {
+    text-align: center;
+    
+}
+
+.icon-security_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.icon-security_3 p {
+    text-align: center;
+    
+}
+    
+.icon-security_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.icon-security_4 p {
+    text-align: center;
+    
+}
+
+    
+.security__image {
+    display: flex;
+    margin-left: 5%;
+    position: relative;
+    
+}
+
+    
+
+ /*COMO SER CLIENTE DEL BANCO*/   
+
+ .be-part-main {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     position: relative;
+     margin-top: 70px;
+ }
+     
+ 
+ .be-part-icons { 
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     position: relative;
+     margin-top: 70px;
+     padding: auto;
+     
+ } 
+ 
+ .be-part-title{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     
+     
+ }
+ .be-part-icon_1 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 20%;
+     border-radius: 3%;
+     padding: 5px;
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+    
+ }
+
+ .be-part-icon_1 p{
+     text-align: center;
+ }
+ 
+ .be-part-icon_2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 20%;
+     border-radius: 3%;
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+     
+ }
+ .be-part-icon_2 p{
+    text-align: center;
+}
+ 
+ .be-part-icon_3 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 3%;
+     width: 20%; 
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+ }
+ .be-part-icon_3 p{
+    text-align: center;
+}
+ 
+ .be-part-icon_4 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 3%;
+     width: 20%;
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+ }
+ .be-part-icon_4 p{
+    text-align: center;
+}
+
+/*CÓMO INGRESAR DINERO A LA CUENTA*/
+
+.load-money {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    
+   
+    }
+ 
+    .load-money-title{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 10%;
+        text-align: center;
+    }  
+    
+.load-money-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+   
+} 
+    
+    
+
+        
+.load-money-icon_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+    width: 40%;
+    padding: 2%;
+}
+       
+        
+.load-money-icon_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border: solid black 2px;
+    width: 40%;
+}
+        
+/*FOOTER*/
+
+.footer-container{
+    background-color: #1C1B4D;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 130PX;
+    flex-wrap: wrap;
+    padding: 2%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+    
+    
+
+.footer { grid-area: 3 / 1 / 4 / 3; }
+
+.footer-title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}
+    
+.social-networks{
+    color: #fff;
+    list-style: none;
+    position: relative;
+    width: 30%;
+    padding: 2%;
+}
+    
+.social-networks-ul{
+    display: flex;
+    margin-right: 50px;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+.contact{
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    padding: 2%;
+}
+
+
+    
+    
+
+iframe{
+    display: flex;
+    position: relative;
+    width: 30%;
+    padding: 2%;
+}
+    
+    
+
+
+/*PAGINA NOSOTROS */
+
+.main-about-us{
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    height: 50%;
+    
+}
+    
+   
+
+    
+.main-nosotros-h2{
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+.about-us{
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin-left: 10%;
+    flex-direction: column;
+}  
+    
+    
+    
+    
+    
+    
+
+
+.about-us-titulo  {
+    display: inline;
+    
+    position: relative;
+    color: #1C1B4D;
+}
+   
+    
+    
+
+.about-us-parrafo { 
+    
+    margin-top: 1%;
+    position: relative;
+    font-size: medium;
+    color: #1C1B4D;
+    text-align: left;
+    
+    
+}
+    
+    
+   
+    
+.us-image {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10%;
+    width: 60%;
+}
+
+
+
+ /* EQUIPO*/   
+    
+  
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    margin-top: 100px;
+    
+    
+}
+
+.team h2{
+    padding-bottom: 20px;
+}
+
+.team p{
+    padding-bottom: 20px;
+}
+
+.team img{
+    display: flex;
+    
+}
+
+/*CLIENTES - PENSAMOS EN VOS*/
+
+.customer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    margin-top: 100px;
+    
+
+}
+
+.customer h2{
+    padding-bottom: 20px;
+}
+   
+.customer p{
+    padding-bottom: 20px;
+}
+ 
+.customer img{
+    display: flex;
+}   
+
+.cybersecurity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    margin-top: 100px;
+    
+}
+
+.cybersecurity h2{
+    padding-bottom: 20px;
+}
+
+.cybersecurity p{
+    padding-bottom: 20px;
+}
+
+.cybersecurity img{
+    display: flex;
+} 
+
+
+/*METRICAS */
+
+.metrics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: larger;
+    margin-top: 50px;
+    position: relative;
+}
+
+    
+
+.metric-1{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-style: solid;
+    border-color: black;
+}
+
+.metric-2{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-style: solid;
+    border-color: black;
+}
+
+
+.metric-3{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-style: solid;
+    border-color: black;
+}
+
+.metric-4{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-style: solid;
+    border-color: black;
+}
+
+/*PAGINA -TARJETA */
+.main-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-title{
+    
+    display: flex;
+    position: relative;
+    margin-top: 200px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.main-container-card{
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+
+.main-container-list{
+    
+    list-style: none;
+    position: relative;
+    
+    padding: 60px;
+}
+
+.card-image{
+    border-radius: 20px;
+    width: 525px;
+    height: 320px;
+    position: relative;
+    
+}
+
+.main-registrate{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 50px;
+    width: 70%;
+}
+.main-registrate h2{
+    text-align: center;
+}
+    
+    
+
+.card-button{
+    display: block;
+    width: 30%;
+    
+}
+
+
+/*PAGINA EARN*/ 
+
+.main-container-earn{
+    
+    position: relative;
+    margin-top: 150PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10PX;
+    
+}
+
+.cripto-earn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    margin-top: 30px;
+    
+}
+
+.crypto_1{
+    border-style: solid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 18%;
+    
+}
+
+.crypto_2{
+    border-style: solid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 18%;
+}
+
+.crypto_3{
+    border-style: solid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 18%;
+    
+}
+
+.crypto_4{
+    border-style: solid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 18%;
+}
+
+.crypto_5{
+    border-style: solid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 18%;
+}
+
+.main-container-whyvini{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+    
+    
+}
+.whyvini-title{
+    text-align: center;
+}
+.main-whyvini{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+    
+.main-whyvini p {
+    text-align: center;
+}   
+
+.main-container-whyvini_1{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border-style: solid;
+    padding: 10px;
+    width: 25%;
+}
+.main-container-whyvini_1, .main-container-whyvini_2, .main-container-whyvini_3 {
+    text-align: center;
+}  
+    
+    
+
+.main-container-whyvini_2{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border-style: solid;
+    padding: 10px;
+    width: 25%;
+}
+    
+    
+
+.main-container-whyvini_3{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border-style: solid;
+    padding: 10px;
+    width: 25%;
+}
+    
+    
+    
+/*PAGINA CONTACTO*/
+
+.contact__form{
+    display: flex;
+    margin-top: 8%;
+    
+    
+}
+
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+.contact__form-text{
+    flex-direction: column;
+    
+    padding: 10%;
+    width: 50%;
+    height: 70%;
+}
+legend{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.fielset{
+    border: solid black;
+    padding: 2%;
+    width: 50%;
+    height: 70%;
+    
+}
+
+/*inicia sesion*/
+.main-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.register-form{
+    
+    
+    margin-top: 10%;
+    width: 7 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.create-user{
+    
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* A PARTIR DE ACA COMIENZA EL RESPONSIVE*/
+
+@media screen and (max-width: 900px) {
+    /*RESPONSIVE - INDEX*/
+    .index-main-texto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .main__texto {
+        margin-left: 0%;
+    }
+
+    .imagen_1 {
+        position: relative;
+        display: block;
+        width: 80%;
+        padding: 10%;
+    }
+    
+    .icons {
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 117rem;
+        position: relative;
+        margin-top: 70px;
+        align-items: center;
+        
+        
+    }
+    .icons_1, .icons_2, .icons_3{
+        width: 80%;
+        margin: 10px;
+    }
+    
+    .security__image{
+        display: none;
+    }
+
+    .security-title{
+        text-align: center;
+    }
+
+    .be-part-icons { 
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 117rem;
+        position: relative;
+        margin-top: 70px;
+        align-items: center;
+        
+    } 
+
+    .be-part-icon_1, .be-part-icon_2, .be-part-icon_3, .be-part-icon_4 {
+        width: 80%;
+        margin: 10px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    
+   .social-networks, .contact, .iframe{
+       width: 100%;
+
+   }
+   /* RESPONSIVE - EARN*/
+   
+   .cripto-earn{
+    flex-direction: column;
+    align-items: center;
+    
+    }     
+   .crypto_1, .crypto_2, .crypto_3, .crypto_4, .crypto_5{
+       width: 80%;
+       margin-top: 10px;
+   } 
+   .main-whyvini{
+       
+       flex-direction: column;
+        align-items: center;
+   } 
+   .main-container-whyvini_1, .main-container-whyvini_2, .main-container-whyvini_3 {
+        width: 80%;
+        margin: 10px;
+    }  
+
+    /*RESPONSIVE - TARJETA*/
+    .main-container-card{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+   
+    .card-image{
+       width: 80%;
+       height: 60%;
+       align-items: center;
+   }
+
+   /*RESPONSIVE NOSOTROS - ESTO ES LO QUE QUEDA MAL*/
+  
+   .main-about-us{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+   }
+   .about-us-titulo{
+       text-align: center;
+   }
+   .about-us{
+       margin-left: 0%;
+   }
+   .us-image{
+    position: relative;
+    display: block;
+    width: 80%;
+    padding: 10%;
+    }
+    .main-nosotros-h2{
+        margin-top: 30%;
+    } 
+    .contact__form{
+        flex-flow: column wrap;
+        width: 80%;
+        
+    }
+    .contact__form-text, .fielset, .contact__form{
+       margin-top: 15%;
+        width: 100%;
+
+    }
+    /* responsive inicia sesion*/
+    .register-form{
+        margin-top: 30%;
+    }
+
+}
+
+
+
+
