@@ -272,15 +272,21 @@ li a.active, li:hover{
     padding: 5px;
     width: 25%;
     border-radius: 3%;
+    
+    
 }
 .icons_1 p{
     text-align: center;
 }    
     
-    
+.icons_1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+  
 
 .icons_2 {
-   
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,7 +301,12 @@ li a.active, li:hover{
     text-align: center;
 }
 
-.icons_3 {
+.icons_2:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.icons_3{
     
     display: flex;
     flex-direction: column;
@@ -310,8 +321,10 @@ li a.active, li:hover{
 .icons_3 p{
     text-align: center;
 }
-
-
+.icons_3:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
 
 
 /*DESCRIPCIÓN DE LA SEGURIDAD DEL SITIO*/
