@@ -182,9 +182,9 @@ li a.active, li:hover{
     
 
 
-.h1__titulo  {
+/* .h1__titulo  {
     display: inline;
-    /*padding: 0px, 0px;*/
+    /*padding: 0px, 0px;
     margin-left: 7%;
     
     position: relative;
@@ -201,9 +201,9 @@ li a.active, li:hover{
     text-align: left;
     
     
-}
+} */
     
-    
+ 
    
     
 .imagen_1 {
@@ -669,12 +669,14 @@ iframe{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: auto;
-    height: 60%;
-    padding-top: 15%;
-    
-    
+    height: 30%;
 }
+    
+    
+    
+    
+    
+    
     
    
 
@@ -682,15 +684,19 @@ iframe{
 .main-nosotros-h2{
     margin-top: 10%;
     text-align: center;
+
 }
+    
 
 
 .about-us{
     position: relative;
     display: flex;
     width: 60%;
+    
     margin-left: 10%;
     flex-direction: column;
+    
 }  
     
     
