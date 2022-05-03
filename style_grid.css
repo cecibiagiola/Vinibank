@@ -8,18 +8,9 @@
 
 
 
-/*.content{
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    background-color:darkmagenta;
-    display: grid;
-    grid-template-rows: 2% 79% 15%;
-    grid-template-columns: repeat(2, 50%);
-    grid-column-gap: 5px;
-    grid-row-gap: 2px;*/
+
     
-    /* BARRA DE NAVEGACION*/
+    /*================================== BARRA DE NAVEGACION ================================================*/
 
 .header{
     background-color: #1C1B4D;
@@ -124,10 +115,10 @@ li a.active, li:hover{
     }
 }
 
-/* FIN BARRA DE NAVEGACION*/
+/*==================================== FIN BARRA DE NAVEGACION ================================================================*/
 
 
-/* PORTADA*/
+/* =======================================INDEX-PORTADA =======================================================================*/
 
 
   
@@ -182,13 +173,13 @@ li a.active, li:hover{
     
 
 
-/* .h1__titulo  {
+.h1__titulo  {
     display: inline;
-    /*padding: 0px, 0px;
+    padding: 0px, 0px;
     margin-left: 7%;
-    
+    font-weight: bold;
     position: relative;
-    color: #1C1B4D;
+    color: #1C1B4D ;
     
 }
 
@@ -201,7 +192,7 @@ li a.active, li:hover{
     text-align: left;
     
     
-} */
+}
     
  
    
@@ -219,7 +210,7 @@ li a.active, li:hover{
 
 
 
-/* ICONOS E INFO DE LOS SERVICIOS*/
+/*====================================== INDEX -ICONOS E INFO DE LOS SERVICIOS===========================================*/
 
 .icons {
     display: flex;
@@ -277,7 +268,11 @@ li a.active, li:hover{
 }
 .icons_1 p{
     text-align: center;
-}    
+}  
+
+.icons__image{
+    width: 30%;
+}
     
 .icons_1:hover{
     transition: 0.5s;
@@ -291,7 +286,7 @@ li a.active, li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    box-shadow: 1px 1px 10px -3px #1791b1;
     padding: 5px;
     width: 25%;
     border-radius: 3%;
@@ -327,14 +322,19 @@ li a.active, li:hover{
 }
 
 
-/*DESCRIPCIÓN DE LA SEGURIDAD DEL SITIO*/
+/* ================================ INDEX -DESCRIPCIÓN DE LA SEGURIDAD DEL SITIO======================================*/
 
 .security{
     display: flex;
     flex-direction: row;
     position: relative;
     flex-wrap: nowrap;
-    width: 100%;
+    
+    width: 80%;
+    margin-left: 10%;
+    
+    
+    
 }
     
     
@@ -342,14 +342,15 @@ li a.active, li:hover{
     
    
     
-.security-title{
-    
+.security-title h2{
+    font-weight: bold;
     display: flex;
     position: relative;
     margin-top: 10%;
     margin-bottom: 2%;
     justify-content: center;
     align-items: center;
+    
     
 }
 
@@ -360,18 +361,19 @@ li a.active, li:hover{
 .security__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 10px;
+    grid-template-rows: repeat(2, 2fr);
+    column-gap: 20px;
     row-gap: 10px;
-    
-    padding: 10px;
-    justify-items: center;
-    align-items: center;
-    
-    margin-right: 2%;
-    
-    
+    width: 80%;
+    margin-right: 10%;
 }
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -386,6 +388,7 @@ li a.active, li:hover{
     border: 10px;
     position: relative;
     margin-top: 15px;
+    
     
   
 }
@@ -449,12 +452,14 @@ li a.active, li:hover{
     display: flex;
     margin-left: 5%;
     position: relative;
+    width: 40%;
+    height: 40%;
     
 }
 
     
 
- /*COMO SER CLIENTE DEL BANCO*/   
+ /* =================================== INDEX-COMO SER CLIENTE DEL BANCO ====================================*/   
 
  .be-part-main {
      display: flex;
@@ -463,6 +468,8 @@ li a.active, li:hover{
      position: relative;
      margin-top: 70px;
  }
+
+
      
  
  .be-part-icons { 
@@ -498,6 +505,11 @@ li a.active, li:hover{
  .be-part-icon_1 p{
      text-align: center;
  }
+
+  .be-part-icon_1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
  
  .be-part-icon_2 {
      display: flex;
@@ -512,6 +524,11 @@ li a.active, li:hover{
  .be-part-icon_2 p{
     text-align: center;
 }
+
+.be-part-icon_2:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
  
  .be-part-icon_3 {
      display: flex;
@@ -525,6 +542,11 @@ li a.active, li:hover{
  .be-part-icon_3 p{
     text-align: center;
 }
+
+.be-part-icon_3:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
  
  .be-part-icon_4 {
      display: flex;
@@ -539,16 +561,20 @@ li a.active, li:hover{
     text-align: center;
 }
 
-/*CÓMO INGRESAR DINERO A LA CUENTA*/
+.be-part-icon_4:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
+/* =================================== INDEX-CÓMO INGRESAR DINERO A LA CUENTA ===================================*/
 
 .load-money {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
+    }
     
    
-    }
  
     .load-money-title{
         position: relative;
@@ -556,6 +582,7 @@ li a.active, li:hover{
         justify-content: center;
         margin: 10%;
         text-align: center;
+        font-weight: bold;
     }  
     
 .load-money-icons {
@@ -574,23 +601,33 @@ li a.active, li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid black 2px;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    border-radius: 3%;
     width: 40%;
     padding: 2%;
 }
-       
+.load-money-icon_1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }     
         
 .load-money-icon_2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-color: black;
-    border: solid black 2px;
+    box-shadow: 1px 1px 10px -3px #1791b1;
+    border-radius: 3%;
     width: 40%;
+    padding: 2%;
 }
+
+.load-money-icon_2:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }   
         
-/*FOOTER*/
+/* ====================================== FOOTER =======================================*/
 
 .footer-container{
     background-color: #1C1B4D;
@@ -631,7 +668,11 @@ li a.active, li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    
+}
+.social-networks-ul a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -661,7 +702,15 @@ iframe{
     
 
 
-/*PAGINA NOSOTROS */
+/* ============================================ PAGINA NOSOTROS ========================================== */
+.main-nosotros{
+   
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
 
 .main-about-us{
     
@@ -671,19 +720,49 @@ iframe{
     align-items: center;
     height: 30%;
 }
-    
-    
-    
+
+.span-bold{
+    font-weight: bold;
+} 
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  
     
     
     
     
    
 
+
     
 .main-nosotros-h2{
     margin-top: 10%;
     text-align: center;
+    
 
 }
     
@@ -740,7 +819,7 @@ iframe{
 
 
 
- /* EQUIPO*/   
+ /* ================================ NOSOTROS - EQUIPO ====================================================*/   
     
   
 .team{
@@ -758,6 +837,7 @@ iframe{
 
 .team h2{
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .team p{
@@ -774,7 +854,7 @@ iframe{
     
 }
 
-/*CLIENTES - PENSAMOS EN VOS*/
+/* ================================================NOSOTROS - CLIENTES=================================*/
 
 .customer{
     display: flex;
@@ -792,6 +872,7 @@ iframe{
 
 .customer h2{
     padding-bottom: 20px;
+    font-weight: bold;
 }
    
 .customer p{
@@ -806,6 +887,8 @@ iframe{
     
 }   
 
+
+/*====================================================== NOSOTROS - SEGURIDAD */
 .cybersecurity{
     display: flex;
     align-items: center;
@@ -813,7 +896,8 @@ iframe{
     flex-direction: column;
     padding: 50px;
     position: relative;
-    margin-top: 100px;
+    
+    
     
 }
     
@@ -825,6 +909,7 @@ iframe{
     
     
     
+    
 }
 
 .cybersecurity-content{
@@ -832,20 +917,27 @@ iframe{
     display: flex;
     flex-direction: row;
     align-items: center;
+   
 }
 
  .cybersecurity p {
+    display: flex;
     width: 50%;
     text-align: left;
-    padding-left: 8%;
-    padding-right: 8%;
+    text-align: left;
+    
+}
+
+.cybersecurity-img{
+    width: 50%;
+    height: 50%;
 }
 
 
 
 
 
-/*METRICAS */
+/*=============================== NOSOTROS - METRICAS ==========================================*/
 
 .metrics{
     display: flex;
@@ -907,7 +999,7 @@ iframe{
     border-radius: 3%;
 }
 
-/*PAGINA -TARJETA */
+/* ====================================================== PAGINA -TARJETA ================================================*/
 .main-card{
     display: flex;
     flex-direction: column;
@@ -915,7 +1007,7 @@ iframe{
     
 }
 .card-title{
-    
+    font-weight: bold;
     display: flex;
     position: relative;
     margin-top: 200px;
@@ -976,32 +1068,48 @@ iframe{
   }
   
     
-    
+  /* ================================================== TARJETA - REGISTRATE  ================================*/ 
 
 .main-registrate{
     display: flex;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    margin: 50px;
+    margin-top: 5%;
     width: 70%;
+    
+}  
+.registrate-boton{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
 }
-.main-registrate h2{
-    text-align: center;
+    .main-registrate h2{
+    text-align: left;
+    
 }
     
     
 
 .card-button{
     display: block;
-    width: 30%;
+    width: 60%;
+    height: 50px;
+    background-color: #B80E65;
+   font-family: 'Lato', sans-serif;
+   border-color: #B80E65;
+   border-style: none;
+   border-radius: 3%;
+   margin-top: 20px;
     
 }
+.card-login{
+    width: 50%;
+    height: 50%;
+}
 
-
-/*PAGINA EARN*/ 
+/* ============================================== PAGINA EARN ==============================================*/ 
 
 .slide-in-fwd-center {
 	-webkit-animation: slide-in-fwd-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -1190,30 +1298,43 @@ iframe{
 #form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-    
     
 }
-.contact__form-text{
+    
+    
+    
+    
+    
+ .contact__form-text{
     flex-direction: column;
     
     padding: 10%;
     width: 50%;
-    height: 70%;
+    height: 70%; 
 }
 legend{
     text-align: center;
     margin-bottom: 10%;
 }
-.fielset{
-    border: solid black;
+ .fielset{
+    margin-right: 5%;
     padding: 2%;
     width: 50%;
-    height: 70%;
+    height: 60%;
     
+} 
+
+#button-contact{
+    display: block;
+    width: 100%;
+    height: 50px;
+    
+    background-color: #B80E65;
+   font-family: 'Lato', sans-serif;
+   border-color: #B80E65;
+   border-style: none;
+   border-radius: 3%;
+   margin-top: 20px;
 }
 
 /*inicia sesion*/
@@ -1400,23 +1521,27 @@ legend{
         margin: 10px;
     }
 
-    .cybersecurity, .cybersecurity-content{
+
+    
+    
+    .cybersecurity{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        
     }
+
     
-    .cybersecurity-img{
-        width: 80%;
-    }
+    
+    
 
     .cybersecurity p {
         width: 50%;
         text-align: left;
         padding-left: 2%;
         padding-right: 2%;
-    }
+    } 
 
 
 
