@@ -1,0 +1,567 @@
+.index-main-texto{
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.main__texto{
+    position: relative;
+    display: flex;
+    color: #fff;
+    
+    flex-direction: column;
+    margin-top: 20%;
+    width: 60%;
+    margin-left: 10%;
+   
+} 
+
+.botones-index{
+    font-display: flex;
+    
+    margin-right: 32%;
+    margin-left: 5%;
+}
+
+.boton{
+    text-decoration: none;
+    color: rgb(184, 14, 101);
+}
+
+.btn1{
+    background-color:#B80E65;
+	border-radius:28px;
+	border:1px solid #B80E65;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #B80E65;
+}
+
+.btn1:hover{
+    
+    color: #ffffff;
+    background-color: rgb(28, 27, 77);
+}
+
+.btn2{
+    @extend .btn1;
+   
+}
+.btn2{
+    background-color: #fff;
+    color: #B80E65;
+}
+    
+/* .btn2{
+    
+	border-radius:28px;
+	border:1px solid #B80E65;
+	display:inline-block;
+	cursor:pointer;
+	color: #B80E65;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #B80E65;
+} */
+
+.btn2:hover{
+    background-color: #1C1B4D;
+    color: #ffffff;
+}
+    
+    
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}   
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+    
+    
+
+
+.h1__titulo  {
+    display: inline;
+    padding: 0px, 0px;
+    margin-left: 5%;
+    font-weight: bold;
+    position: relative;
+    color: #1C1B4D ;
+    
+}
+
+.main__parrafo { 
+    margin-top: 1%;
+    margin-left: 5%;
+    position: relative;
+    font-size: medium;
+    color: #1C1B4D;
+    text-align: left;
+   
+    
+}
+    
+ 
+   
+    
+.imagen_1 {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10%;
+    width: 60%;
+}
+
+    
+    
+
+
+
+/*====================================== INDEX -ICONOS E INFO DE LOS SERVICIOS===========================================*/
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.slide-in-fwd-bottom {
+	-webkit-animation: slide-in-fwd-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-fwd-bottom {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateY(800px);
+              transform: translateZ(-1400px) translateY(800px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-bottom {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateY(800px);
+              transform: translateZ(-1400px) translateY(800px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+    
+.icons_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 25%;
+    border-radius: 3%;
+    
+    
+}
+.icons_1 p{
+    text-align: center;
+}  
+
+.icons__image{
+    width: 30%;
+}
+    
+.icons_1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+  
+
+.icons_2 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px #1791b1;
+    padding: 5px;
+    width: 25%;
+    border-radius: 3%;
+    
+}
+.icons_2 p{
+    text-align: center;
+}
+
+.icons_2:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.icons_3{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 25%;
+    border-radius: 3%;
+}
+
+.icons_3 p{
+    text-align: center;
+}
+.icons_3:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+/* ================================ INDEX -DESCRIPCIÓN DE LA SEGURIDAD DEL SITIO======================================*/
+
+.security{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: nowrap;
+    
+    width: 80%;
+    margin-left: 10%;
+    
+    
+    
+}
+    
+    
+    
+    
+   
+    
+.security-title h2{
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+    
+    
+
+
+.security__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    width: 80%;
+    margin-right: 10%;
+}
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+
+.icon-security_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+    
+    
+  
+}
+.icon-security_1 p {
+    text-align: center;
+    
+}
+    
+
+
+.icon-security_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.icon-security_2 p {
+    text-align: center;
+    
+}
+
+.icon-security_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.icon-security_3 p {
+    text-align: center;
+    
+}
+    
+.icon-security_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    border-color: black;
+    border: 10px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.icon-security_4 p {
+    text-align: center;
+    
+}
+
+    
+.security__image {
+    display: flex;
+    margin-left: 5%;
+    position: relative;
+    width: 40%;
+    height: 40%;
+    
+}
+
+    
+
+ /* =================================== INDEX-COMO SER CLIENTE DEL BANCO ====================================*/   
+
+ .be-part-main {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     position: relative;
+     margin-top: 70px;
+ }
+
+
+     
+ 
+ .be-part-icons { 
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     position: relative;
+     margin-top: 70px;
+     padding: auto;
+     
+ } 
+ 
+ .be-part-title{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     
+     
+ }
+ .be-part-icon_1 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 20%;
+     border-radius: 3%;
+     padding: 5px;
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+    
+ }
+
+ .be-part-icon_1 p{
+     text-align: center;
+ }
+
+  .be-part-icon_1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
+ 
+ .be-part-icon_2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 20%;
+     border-radius: 3%;
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+     
+ }
+ .be-part-icon_2 p{
+    text-align: center;
+}
+
+.be-part-icon_2:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
+ 
+ .be-part-icon_3 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 3%;
+     width: 20%; 
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+ }
+ .be-part-icon_3 p{
+    text-align: center;
+}
+
+.be-part-icon_3:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
+ 
+ .be-part-icon_4 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 3%;
+     width: 20%;
+     box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+ }
+ .be-part-icon_4 p{
+    text-align: center;
+}
+
+.be-part-icon_4:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
+/* =================================== INDEX-CÓMO INGRESAR DINERO A LA CUENTA ===================================*/
+
+.load-money {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    }
+    
+   
+ 
+    .load-money-title{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 10%;
+        text-align: center;
+        font-weight: bold;
+      
+        
+    }  
+    
+.load-money-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+   
+} 
+    
+    
+
+        
+.load-money-icon_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    border-radius: 3%;
+    width: 40%;
+    padding: 2%;
+}
+.load-money-icon_1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }     
+        
+.load-money-icon_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px #1791b1;
+    border-radius: 3%;
+    width: 40%;
+    padding: 2%;
+}
+
+.load-money-icon_2:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }   

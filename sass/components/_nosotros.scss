@@ -1,0 +1,318 @@
+.main-nosotros-h2{
+    margin-top: 10%; 
+    margin-bottom: 0%;
+    text-align: center;
+    padding: 5%;
+    background-color: #b80e663c;
+}
+
+
+ .main-nosotros{
+    
+    top: 0%;
+    width: 80%; 
+    margin: auto; 
+}
+     
+    
+
+.main-about-us{
+    border-bottom: 2px solid $vini-color;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30%;
+}
+
+.span-bold{
+    font-weight: bold;
+} 
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  
+    
+    
+    
+    
+   
+
+
+    
+
+    
+
+    
+
+
+.about-us{
+    position: relative;
+    display: flex;
+    width: 60%;
+    
+    margin-left: 10%;
+    flex-direction: column;
+    
+}  
+    
+    
+    
+    
+    
+    
+
+
+.about-us-titulo  {
+    display: inline;
+    
+    position: relative;
+    color: #1C1B4D;
+}
+   
+    
+    
+
+.about-us-parrafo { 
+    
+    margin-top: 1%;
+    position: relative;
+    font-size: medium;
+    color: #1C1B4D;
+    text-align: left;
+    
+    
+}
+    
+    
+   
+    
+.us-image {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10%;
+    width: 70%;
+    margin-right: -7%;
+}
+
+
+
+ /* ================================ NOSOTROS - EQUIPO ====================================================*/   
+    
+  
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    margin-top: 10px;
+    border-bottom: 2px solid $vini-color;
+    
+    
+}
+
+.team h2{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.team p{
+    padding-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.team img{
+    display: flex;
+    width: 70%;
+   
+
+    
+}
+
+/* ================================================NOSOTROS - CLIENTES=================================*/
+
+.customer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    margin-top: 100px;
+    border-bottom: 2px solid $vini-color;
+    
+    
+
+}
+
+.customer h2{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+   
+.customer p{
+    padding-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+ 
+.customer img{
+    display: flex;
+    width: 100%;
+    
+}   
+
+
+/*====================================================== NOSOTROS - SEGURIDAD */
+.cybersecurity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    
+    
+    
+}
+    
+    
+
+.cybersecurity h2{
+    display: inline;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.cybersecurity-content{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+ .cybersecurity p {
+    display: flex;
+    width: 50%;
+    text-align: left;
+    text-align: left;
+    
+}
+
+.cybersecurity-img{
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
+
+/*=============================== NOSOTROS - METRICAS ==========================================*/
+
+.metrics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.metrics p{
+    text-align: center;
+}  
+
+    
+
+.metric-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 20%;
+    border-radius: 3%;
+        &:hover{
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+}
+
+.metric-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 20%;
+    border-radius: 3%;
+        &:hover{
+            transition: 0.5s;
+            transform: scale(1.1);
+     }
+}
+
+
+.metric-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 20%;
+    border-radius: 3%;
+    &:hover{
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+}
+
+.metric-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    padding: 5px;
+    width: 20%;
+    border-radius: 3%;
+    &:hover{
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+}
