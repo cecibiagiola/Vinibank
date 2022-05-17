@@ -1,0 +1,242 @@
+.main-card{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    
+    align-items: center;
+    
+}
+.card-title{
+    color: $vini-color;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+    padding: 5%;
+    justify-content: center;
+    font-size: $titulos;
+    
+}
+
+.main-container-card{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+    
+
+
+
+.main-container-list{
+    position: relative;
+    list-style: none;
+    padding: 60px;
+        h2{
+            color: $vini-color;
+            margin-bottom: 30px;
+            font-size: $subtitulos;
+            font-weight: bold;
+            
+        }
+}
+ .main-list li{
+     text-decoration: none;
+     list-style: none;
+     color: $vini-color;
+     font-size: $parrafos;
+ }
+    
+
+.card-image{
+    border-radius: 20px;
+    width: 525px;
+    height: 320px;
+    position: relative;
+}
+.scale-up-hor-center {
+	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  @keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  
+    
+  /* ================================================== TARJETA - REGISTRATE  ================================*/ 
+
+.main-registrate{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;;
+    height: 50%;
+    margin-bottom: 5%;
+    margin: auto;
+    
+}  
+
+
+
+.registrate-boton{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    width: 50%;
+    
+}
+
+.boton{
+    text-decoration: none;
+    
+} 
+.btn-login{
+    
+	border-radius:28px;
+	background-color: $primary-color;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-align: center;
+	text-shadow:0px 1px 0px $primary-color;
+    margin: auto;
+    margin-top: 2%;
+    width: 30%;
+}
+
+.btn-login:hover{
+   
+        background-color: $vini-color;
+        color: $color-fuente;
+    
+}
+        
+    
+
+.main-registrate h2{
+    text-align: center;
+    color: $vini-color;
+    font-size: $subtitulos;
+}
+    
+    
+    
+    
+    
+    
+
+.card-button{
+    display: block;
+    width: 60%;
+    height: 50px;
+    background-color: $primary-color;;
+   font-family: 'Lato', sans-serif;
+   border-color: $primary-color;;
+   border-style: none;
+   border-radius: 3%;
+   margin-top: 20px;
+    
+}
+.card-login{
+    width: 30%;
+    height: 30%;
+}
+
+/*RESPONSIVE - TARJETA*/
+@media screen and (max-width: 900px){
+
+    .card-title{
+        margin-top: 30%;
+        font-size: $subtitulos;
+    }
+
+    .list-title{
+        margin-top: 30%;
+        font-size: $subtitulos;
+       
+    }
+    
+    
+    .main-container-card{
+    flex-direction: column;
+    flex-flow: column-reverse;
+    align-items: center;
+    width: 100%;
+    
+    justify-content: center;
+    
+    }
+
+
+    .card-image{
+    width: 80%;
+    height: 60%;
+    align-items: center;
+    }
+
+    .main-list li{
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+        
+    }
+
+    .card-login{
+        display: none;
+    }
+
+    .main-registrate{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+   .registrate-boton h2{
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    } 
+    
+    .btn-login{
+        width: 100%;
+        height: 15%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        
+    }
+     
+    .main-registrate h2{
+        width: 100%;
+    }
+        
+}

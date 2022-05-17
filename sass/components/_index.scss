@@ -1,3 +1,9 @@
+
+* {
+    font-family: $fuente;
+    
+}
+
 .index-main-texto{
     display: flex;
     flex-direction: row;
@@ -7,7 +13,7 @@
 .main__texto{
     position: relative;
     display: flex;
-    color: #fff;
+    color: $color-fuente;
     margin-left: 10%;
     flex-direction: column;
     margin-top: 20%;
@@ -22,24 +28,26 @@
     
 .boton{
     text-decoration: none;
-    color: rgb(184, 14, 101);
-} 
+   
+}
 
 .btn1{
-    background-color:#B80E65;
+    background-color:$primary-color;;
 	border-radius:28px;
-	border:1px solid #B80E65;
+	border:1px solid $primary-color;;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:$color-fuente;;
 	font-size:17px;
 	padding:16px 31px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #B80E65;
+	text-shadow:0px 1px 0px $primary-color;
+    font-size: $parrafos;
 }
 
 .btn1:hover{
-    color: #ffffff;
+    
+    color: $color-fuente;;
     background-color: rgb(28, 27, 77);
 }
 
@@ -48,13 +56,13 @@
    
 }
 .btn2{
-    background-color: #fff;
-    color: #B80E65;
+    background-color: $color-fuente;
+    color: $primary-color;
 }
  
 .btn2:hover{
     background-color: #1C1B4D;
-    color: #ffffff;
+    color: $color-fuente;;
 }
 
 .fade-in-fwd {
@@ -94,13 +102,14 @@
     font-weight: bold;
     position: relative;
     color: #1C1B4D ;
+    font-size: $titulos;
 }
 
 .main__parrafo { 
     margin-top: 1%;
     margin-left: 5%;
     position: relative;
-    font-size: medium;
+    font-size:$parrafos;
     color: #1C1B4D;
     text-align: left;
 }
@@ -161,14 +170,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    background-color: $color-fuente;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     padding: 5px;
     width: 25%;
     border-radius: 3%;
 }
-    
+ .icons__h2{
+     font-size: $subtitulos;
+     color: $vini-color;
+     text-align: center;
+ }
+
 .icons_1 p{
     text-align: center;
+    font-size: $parrafos;
+    color: $vini-color;
 }  
     
 
@@ -196,6 +213,7 @@
     
 .icons_2 p{
     text-align: center;
+    font-size: $parrafos;
 }
     
 .icons_2:hover{
@@ -205,18 +223,12 @@
 
 .icons_3{
     @extend .icons_1;
-     /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
-    padding: 5px;
-    width: 25%;
-    border-radius: 3%;  */
+   
 }
     
 .icons_3 p{
     text-align: center;
+    font-size: $parrafos;
 }
 .icons_3:hover{
     transition: 0.5s;
@@ -278,13 +290,16 @@
 
 .security-title h2{
     font-weight: bold;
+    font-size: $subtitulos;
     display: flex;
     position: relative;
     margin-top: 10%;
     margin-bottom: 2%;
     justify-content: center;
     align-items: center;
+    color: $vini-color;
 }
+        
     
 .security__container{
     display: flex;
@@ -293,6 +308,11 @@
     justify-content: center;
     height: 50%;
     width: 80%;
+    background-color: #b80e6648; 
+    border-radius:1%;
+        h2{
+            color: $vini-color;
+        }
 }   
     
 .container-1 {
@@ -303,16 +323,12 @@
     align-items: center;
     justify-content: space-around;
     margin: auto;
+    
 }
 
 .container-2{
     @extend .container-1;
-    /* width: 80%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around; */
+   
 }        
     
     
@@ -354,6 +370,7 @@
     border: 10px;
     position: relative;
     margin-top: 15px;
+    
 }
 
 .security-p {
@@ -371,6 +388,7 @@
     border: 10px;
     position: relative;
     margin-top: 15px;
+
 }   
     
 .icon-security_3 {
@@ -382,6 +400,7 @@
     border: 10px;
     position: relative;
     margin-top: 15px;
+    
 }   
     
 .icon-security_4 {
@@ -420,6 +439,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    color: $vini-color;
+    font-weight: bold;
+    font-size: $subtitulos;
 }
     
 .be-part-icon_1 {
@@ -430,12 +452,15 @@
     width: 20%;
     border-radius: 3%;
     padding: 5px;
-    box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+    background-color: $color-fuente;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1) 
    }
    
 
 .be-part-icon_1 p{
     text-align: center;
+    font-size: $parrafos;
+    color: $vini-color;
 }
 
  .be-part-icon_1:hover{
@@ -444,17 +469,12 @@
    }
 
 .be-part-icon_2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    border-radius: 3%;
-    box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+    @extend .be-part-icon_1
     
 }
 .be-part-icon_2 p{
    text-align: center;
+   font-size: $parrafos;
 }
 
 .be-part-icon_2:hover{
@@ -463,16 +483,11 @@
    }
 
 .be-part-icon_3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3%;
-    width: 20%; 
-    box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+    @extend .be-part-icon_1
 }
 .be-part-icon_3 p{
    text-align: center;
+   font-size: $parrafos;
 }
 
 .be-part-icon_3:hover{
@@ -481,16 +496,11 @@
    }
 
 .be-part-icon_4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3%;
-    width: 20%;
-    box-shadow: 1px 1px 10px -3px rgba(184, 14, 101, 1);
+    @extend .be-part-icon_1
 }
 .be-part-icon_4 p{
    text-align: center;
+   font-size: $parrafos;
 }
 
 .be-part-icon_4:hover{
@@ -518,6 +528,8 @@
         margin-top: 5%;
         text-align: center;
         font-weight: bold;
+        font-size: $subtitulos;
+        color: $vini-color;
       
         
     }  
@@ -539,7 +551,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    box-shadow: 1px 1px 10px -3px $primary-color;
     border-radius: 3%;
     width: 40%;
     padding: 2%;
@@ -550,15 +562,9 @@
     }     
         
 .load-money-icon_2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1px 1px 10px -3px #1791b1;
-    border-radius: 3%;
-    width: 40%;
-    padding: 2%;
+    @extend .load-money-icon_1
 }
+    
 
 .load-money-icon_2:hover{
     transition: 0.5s;
@@ -572,13 +578,20 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            
             align-items: center;
             justify-content: center;
-            margin-top: 5%;
+           margin-top: 15%; 
+            
         }
+            
         .main__texto {
             margin-left: 0%;
+
+        }
+
+        .h1__titulo{
+            font-size: $subtitulos;
+            
         }
         .btn2{
             margin-top: 10px;
@@ -587,18 +600,21 @@
         .imagen_1 {
             position: relative;
             display: block;
-            width: 100%;
+            width: 80%;
             padding: 10%;
+            border-bottom: 1px solid $vini-color;
         }
         
         .icons {
             display: flex;
             flex-flow: column wrap;
-            max-width: 117rem;
+            width: 100%;
+            margin: auto;
             position: relative;
             margin-top: 70px;
             align-items: center;
-            
+            padding-bottom: 50px;
+            border-bottom: 1px solid $vini-color;
             
         }
         .icons_1, .icons_2, .icons_3{
@@ -609,19 +625,34 @@
         .security__image{
             display: none;
         }
-    
+        
+        .security__container{
+            background-color: $color-fuente;
+        }
         .security-title{
             text-align: center;
+            
+            
         }
 
         .container-1, .container-2{
             flex-direction: column;
             align-items: center;
-            
+            justify-content: center;
             width: 120%;
+            background-color: none;
+            margin-top: 20px;
+            
+        }
+        
+        .be-part-title{
+            font-size: $subtitulos;
+            
+            width: 80%;
+            padding-top: 8%;
+            border-top: 1px solid $vini-color;
             margin: auto;
         }
-    
         .be-part-icons { 
             display: flex;
             flex-flow: column wrap;
@@ -636,6 +667,30 @@
             width: 80%;
             margin: 10px;
         }
+
+    .load-money{
+        margin-top: 20%;
+        border-top: 1px solid $vini-color;
+        width: 80%;
+        margin: auto;
+    }
+
+        .load-money-icons{
+            flex-direction: column;
+            
+        
+        .load-money-title{
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .load-money-icon_1, .load-money-icon_2{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
         .footer-container{
             flex-direction: column;
         }
@@ -646,6 +701,7 @@
        }
 
     }
+} 
 
 
     

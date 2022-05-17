@@ -4,6 +4,8 @@
     text-align: center;
     padding: 5%;
     background-color: #b80e663c;
+    font-size: $titulos;
+    color: $vini-color;
 }
 
 
@@ -17,7 +19,7 @@
     
 
 .main-about-us{
-    border-bottom: 2px solid $vini-color;
+    border-bottom: 1px solid $vini-color;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -88,20 +90,22 @@
 
 .about-us-titulo  {
     display: inline;
-    
+    font-size: $subtitulos;
     position: relative;
-    color: #1C1B4D;
+    color: $vini-color;
+    font-weight: bold;
 }
    
     
     
 
 .about-us-parrafo { 
-    
+    width: 100%;
+    margin: auto;
     margin-top: 1%;
     position: relative;
-    font-size: medium;
-    color: #1C1B4D;
+    font-size:$parrafos;
+    color: $vini-color;
     text-align: left;
     
     
@@ -132,7 +136,7 @@
     padding: 50px;
     position: relative;
     margin-top: 10px;
-    border-bottom: 2px solid $vini-color;
+    border-bottom: 1px solid $vini-color;
     
     
 }
@@ -140,6 +144,7 @@
 .team h2{
     padding-bottom: 20px;
     font-weight: bold;
+    font-size: $subtitulos;
 }
 
 .team p{
@@ -163,10 +168,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 50px;
+    margin-top: 5%;
     position: relative;
-    margin-top: 100px;
-    border-bottom: 2px solid $vini-color;
+    padding-bottom: 5%;
+    border-bottom: 1px solid $vini-color;
     
     
 
@@ -175,18 +180,20 @@
 .customer h2{
     padding-bottom: 20px;
     font-weight: bold;
+    font-size: $subtitulos;
 }
    
 .customer p{
     padding-bottom: 20px;
     text-align: center;
     width: 80%;
+    font-size: $parrafos;
 }
  
 .customer img{
     display: flex;
     width: 100%;
-    
+    margin: auto;
 }   
 
 
@@ -198,21 +205,23 @@
     flex-direction: column;
     padding: 50px;
     position: relative;
-    
-    
-    
+    margin-bottom: 10%;
 }
+    
+    
     
     
 
 .cybersecurity h2{
     display: inline;
     text-align: center;
-    
-    
-    
-    
+    font-size: $subtitulos;
+    font-weight: bold;
+    padding: 8%;
 }
+    
+    
+    
 
 .cybersecurity-content{
     
@@ -227,6 +236,7 @@
     width: 50%;
     text-align: left;
     text-align: left;
+    font-size: $parrafos;
     
 }
 
@@ -314,5 +324,115 @@
     &:hover{
         transition: 0.5s;
         transform: scale(1.1);
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    
+   
+   
+    .main-nosotros{
+        
+        margin-top: 0;
+        width: 100%; 
+        margin: auto; 
+    }
+    
+    
+    .main-about-us{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 15%;
+        width: 80%;
+        align-items: center;
+        justify-content: center; 
+        border-bottom: 1px solid $vini-color
+    }
+
+    .main-nosotros-h2{
+    font-size: $subtitulos;
+    text-align: justify;
+}
+    
+
+    .about-us-titulo{
+        text-align: center;
+        
+    }
+
+    .about-us{
+        margin-left: 0%;
+    }
+    .us-image{
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 10%;
+    }
+        
+    .main-nosotros-h2{
+            
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+    } 
+
+    .customer img{
+        width: 80%;
+    }
+       /*  .contact__form{
+            flex-flow: column wrap;
+            width: 80%;
+            
+        }
+        .contact__form-text, .fielset, .contact__form{
+        margin-top: 15%;
+            width: 100%;
+
+        } */
+
+        .metrics {
+            display: flex;
+            flex-flow: column wrap;
+            max-width: 117rem;
+            position: relative;
+            margin-top: 70px;
+            align-items: center;
+            
+            
+        }
+        .metric-1, .metric-2, .metric-3, .metric-4{
+            width: 80%;
+            margin: 10px;
+        }
+
+
+    
+    
+    .cybersecurity{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    
+    
+    
+
+    .cybersecurity p {
+        width: 100%;
+        text-align: left;
+        padding-left: 2%;
+        padding-right: 2%;
+    } 
+
+    .cybersecurity-img{
+        width: 100%;
+        padding-bottom: 8%;
     }
 }

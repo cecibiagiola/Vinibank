@@ -45,10 +45,12 @@
     
         h1{
             color: $vini-color;
+            font-size: $titulos;
+            font-weight: bold;
             
         }
         p{
-            font-size: large;
+            font-size: $parrafos;
             text-align: center;
             margin-top: 20px;
             width: 50%;
@@ -90,7 +92,11 @@
     text-align: center;
     box-shadow: 1px 1px 10px -3px $primary-color;
     color: $vini-color;
- }   
+        h3{
+            color: $vini-color;
+            font-size: $subtitulos;
+        }
+}   
     
 
 .crypto_1, .crypto_2, .crypto_3, .crypto_4{
@@ -120,7 +126,9 @@
 }
 .whyvini-title{
     text-align: center;
-    color: #fff
+    color: $color-fuente;
+    font-size: $subtitulos;
+    font-weight: bold;
 }
 .main-whyvini{
     
@@ -133,6 +141,7 @@
 .main-whyvini p {
     text-align: center;
     color: $vini-color;
+    font-size: $parrafos;
 }   
 
 @mixin whyvini {
@@ -143,7 +152,7 @@
     width: 25%;
     border-radius: 3%;
     color: $vini-color;
-    background-color: #fff;
+    background-color: $color-fuente;
 }
     
 .main-container-whyvini_1, .main-container-whyvini_2, .main-container-whyvini_3 {
@@ -178,8 +187,8 @@
             width: 80%;
             margin: 10px;
     }  
-        
-    .footer-container{
+}  
+    /* .footer-container{
             flex-direction: column;
     }
         
@@ -198,7 +207,7 @@
  }
 
 .footer-container{
-    background-color: #1C1B4D;
+    background-color:$vini-color;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -266,8 +275,5 @@ iframe{
     width: 30%;
     padding: 2%;
 }
+     */
     
-    
-
-    
-     
