@@ -36,95 +36,97 @@
              <li><a class="active" href="Ingresa.html">Iniciar Sesión</a></li>
          </ul>
         </nav>  
-        </header>
+    </header>
 
     <main>
     
 
-    <div class="contact__form">
-        <div class="contact__form-text">
-            <img src="../imagenes/mensaje-contacto.png" alt="contato mensaje" class="mensaje-contacto">
-            <h2>Tenes dudas? Contactanos</h2>
-            <p>Rellena el formulario y a la brevedad nos estaremos comunicando. <br> Si ya sos cliente, podes usar el chat que se encuentra en la App.</p>
-            <div class="imagenes-app">
-                <a href="https://play.google.com/store?hl=es_AR&gl=US" target="_blank"><img src="../imagenes/googleplay.png" alt="google-play" class="google-img"></a>
-                <a href="https://apple.com/la/app-store/" target="_blank"><img src="../imagenes/appstore.png" alt="appstore" class="app-img"></a>
+        <div class="contact__form">
+            <div class="contact__form-text">
+                <img src="../imagenes/mensaje-contacto.png" alt="contato mensaje" class="mensaje-contacto">
+                <h2>Tenes dudas? Contactanos</h2>
+                <p>Rellena el formulario y a la brevedad nos estaremos comunicando. <br> Si ya sos cliente, podes usar el chat que se encuentra en la App.</p>
+                <div class="imagenes-app">
+                    <a href="https://play.google.com/store?hl=es_AR&gl=US" target="_blank"><img src="../imagenes/googleplay.png" alt="google-play" class="google-img"></a>
+                    <a href="https://apple.com/la/app-store/" target="_blank"><img src="../imagenes/appstore.png" alt="appstore" class="app-img"></a>
+                </div>
             </div>
-        </div>
 
     
     
-        <fieldset class="fielset">
-            <legend>Contacto</legend>
-            <form id="form">
-                <div class="mb-3">
-                    <label for="exampleName" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleName" placeholder="Ej: Armando Esteban Quito" name="name">
-                    
-                </div>
+            <fieldset class="fielset">
+                <legend>
+                    Contacto
+                </legend>
+                    <form id="form">
+                        <div class="mb-3">
+                            <label for="exampleName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleName" placeholder="Ej: Armando Esteban Quito" name="name">
+                            
+                        </div>
 
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Ej: nombre@ejemplo.com" name="email">
-                    <div id="emailHelp" class="form-text"></div>
-                </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Ej: nombre@ejemplo.com" name="email">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
 
-                <div class="mb-3">
-                    <label for="exampleTelephone" class="form-label">Telefono</label>
-                    <input type="tel" class="form-control" id="exampleTelephone" aria-describedby="TelephoneHelp"
-                        placeholder="Ej: 01122334455" name="telephone">
-                    <div id="TelephoneHelp" class="form-text"></div>
-                </div>
+                        <div class="mb-3">
+                            <label for="exampleTelephone" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="exampleTelephone" aria-describedby="TelephoneHelp"
+                                placeholder="Ej: 01122334455" name="telephone">
+                            <div id="TelephoneHelp" class="form-text"></div>
+                        </div>
 
-                <div class="mb-3">
-                    <label for="exampleText" class="form-label">Dejanos tu consulta</label>
-                    <textarea type="email" class="form-control" id="exampleText" aria-describedby="TextHelp"
-                        placeholder="Escribi aca tu consulta" name="message"></textarea>
-                    <div id="TextHelp" class="form-text"></div>
-                </div>
+                        <div class="mb-3">
+                            <label for="exampleText" class="form-label">Dejanos tu consulta</label>
+                            <textarea type="email" class="form-control" id="exampleText" aria-describedby="TextHelp"
+                                placeholder="Escribi aca tu consulta" name="message"></textarea>
+                            <div id="TextHelp" class="form-text"></div>
+                        </div>
 
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleNewsletter">
-                    <label class="form-check-label" for="exampleNewsletter">Deseo suscribirme al newsletter</label>
-                </div>
-                <input type="submit" id="button" value="Enviar">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleNewsletter">
+                            <label class="form-check-label" for="exampleNewsletter">Deseo suscribirme al newsletter</label>
+                        </div>
+                        <input type="submit" id="button" value="Enviar">
 
+                    </form>
 
-            </form>
-        </fieldset>    
-    </div>        
+            </fieldset>    
+        </div>        
             
-            <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript"
+             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-            <script type="text/javascript">
+        <script type="text/javascript">
                 emailjs.init('xLcMkvql4YegWS7Mq')
-            </script>
+        </script>
+        
+    
+    </main>
+    <footer class="footer">
+        <div id="social">
+            <p class="footer-title">Seguinos en nuestras redes</p>
+            <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
-    </div>
-</main>
-<footer class="footer">
-    <div id="social">
-        <p class="footer-title">Seguinos en nuestras redes</p>
-        <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-    </div>
-    <div class="contacto">
-        <p class="contact-title">Contacto</p>
-            <p>Av. Siempreviva 742 - 2B</p>
-            <p>contacto@vinibank.com</p>
-            <p>+54 11-5698-7453</p>
-            <p>+54 11-6987-3697</p>
-    </div>
-    <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.305927019973!2d-58.603685269677214!3d-34.639284895655756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb882366f5fa1%3A0xd0996405d0ba1ec8!2sPlaza%20Medialuna%20de%20Goria!5e0!3m2!1ses-419!2sar!4v1648150500699!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="iframe">
+        <div class="contacto">
+            <p class="contact-title">Contacto</p>
+                <p>Av. Siempreviva 742 - 2B</p>
+                <p>contacto@vinibank.com</p>
+                <p>+54 11-5698-7453</p>
+                <p>+54 11-6987-3697</p>
+        </div>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.305927019973!2d-58.603685269677214!3d-34.639284895655756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb882366f5fa1%3A0xd0996405d0ba1ec8!2sPlaza%20Medialuna%20de%20Goria!5e0!3m2!1ses-419!2sar!4v1648150500699!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="iframe">
         </iframe>
-</footer>
+    </footer>
 
 
 </body>
