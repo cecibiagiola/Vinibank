@@ -1893,125 +1893,145 @@ iframe{
   }
 }
 
-.main-login {
+.cont {
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  margin-top: 10%;
-  height: 70vh;
-}
-
-.user-login {
-  width: 100px;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
+  background: -webkit-linear-gradient(left, #1C1B4D, #B80E65);
 }
 
-#form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+/* .main-login{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    margin-top: 10%;
+    height: 70vh;
+    
+}
+   
+.user-login{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
 
-.contact__form-text-login {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 8%;
-  width: 50%;
-  height: 70%;
-  color: #1C1B4D;
-  font-family: 'Lato', sans-serif;
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+    
+
+    
+    
+    
+.contact__form-text-login{
+    flex-direction: column;
+    padding: 8%; 
+    width: 50%;
+    height: 70%; 
+    color: $vini-color;
+    font-family: 'Lato', sans-serif;
+        h2{
+            font-weight: bold;
+            
+            
+        }
+    
+  
 }
 
-.contact__form-text-login h2 {
-  font-weight: bold;
-}
 
-legend {
-  text-align: center;
-  margin-bottom: 10%;
-  color: #1C1B4D;
-  font-size: 28px;
-}
 
-.fielset-login {
-  margin: auto;
-  padding: 2%;
-  width: 50%;
-  height: 90%;
-  margin-bottom: 10%;
-  border-radius: 10px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-}
+
+legend{
+    text-align: center;
+    margin-bottom: 10%;
+    color: $vini-color;
+    font-size: $subtitulos;
+    }
+    
+   
+    
+ .fielset-login{
+    margin: auto;
+    padding: 2%;
+    width: 50%;
+    height: 90%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1)
+    } 
+    
+    
+
+
+
 
 /*inicia sesion*/
-#button {
-  background-color: #1C1B4D;
-  border-radius: 28px;
-  border: 1px solid #B80E65;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #B80E65;
-  width: 50%;
-  margin-left: 25%;
+/* #button{
+    background-color:$vini-color;
+	border-radius:28px;
+	border:1px solid $primary-color;
+	display:inline-block;
+	cursor:pointer;
+	color:#665d5d;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px $primary-color;
+    width: 50%;
+    margin-left: 25%;
 }
 
-.forgot-pass {
-  margin: auto;
-  padding: 2%;
+.forgot-pass{
+    margin: auto;
+    padding: 2%;
 }
 
-@media screen and (max-width: 900px) {
-  .main-login {
-    margin-top: 30%;
-  }
-  .contact__form-login {
-    -ms-flex-wrap: wrap;
+@media screen and (max-width: 900px){
+    
+    .main-login{
+        margin-top: 30%;
+       
+        
+        
+    }
+    
+    
+    .contact__form-login{
         flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact__form-text-login {
-    width: 90%;
-    margin: auto;
-  }
-  .fielset-login {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10%;
-  }
-  .user-login {
-    width: 50px;
-    height: 50px;
-  }
-}
+        flex-direction: column;
+        
+        
+    }
+    .contact__form-text-login{
+        width: 90%;
+        margin:auto;    }
+    
+        .fielset-login{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
 
+    .user-login{
+        width: 50px;
+        height: 50px;
+    }
+} */
 .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;

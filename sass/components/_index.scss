@@ -3,6 +3,9 @@
     font-family: $fuente;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .banner{
     position: relative;
