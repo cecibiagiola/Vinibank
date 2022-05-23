@@ -271,7 +271,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    box-shadow: 1px 1px 10px -3px $primary-color;
     padding: 5px;
     width: 20%;
     border-radius: 3%;
@@ -286,7 +286,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    box-shadow: 1px 1px 10px -3px $primary-color;
     padding: 5px;
     width: 20%;
     border-radius: 3%;
@@ -302,7 +302,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    box-shadow: 1px 1px 10px -3px $primary-color;
     padding: 5px;
     width: 20%;
     border-radius: 3%;
@@ -317,7 +317,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px -3px rgba(23, 145, 177, 1);
+    box-shadow: 1px 1px 10px -3px $primary-color;
     padding: 5px;
     width: 20%;
     border-radius: 3%;
@@ -355,7 +355,11 @@
     .main-nosotros-h2{
     font-size: $subtitulos;
     text-align: justify;
-}
+    }
+
+    .about-us-parrafo{
+        text-align: center;
+    }
     
 
     .about-us-titulo{
@@ -380,19 +384,18 @@
             margin-left: 10%;
     } 
 
-    .customer img{
+    .customer{
         width: 80%;
+        margin: auto;
+        margin-top: 40px;
     }
-       /*  .contact__form{
-            flex-flow: column wrap;
-            width: 80%;
-            
-        }
-        .contact__form-text, .fielset, .contact__form{
-        margin-top: 15%;
-            width: 100%;
-
-        } */
+    
+    
+   .team{
+       width: 80%;
+       margin: auto;
+   }
+     
 
         .metrics {
             display: flex;

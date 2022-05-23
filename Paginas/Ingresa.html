@@ -43,11 +43,22 @@
     
        <div class="container-login">
            <div class="login-form">
-                
-                <h2>Ingresar</h2>
-               <input type="mail" name="mail" class="input-login" placeholder="Email">
-               <input type="password" name="password" class="input-login" placeholder="Contrasena">
-               <button type="submit" class="login-button">Ingresar</button>
+                <div class="login-input-container">
+                    <img src="../imagenes/user-login.png" alt="" class="user-login">
+                    <h2>Ingresar</h2>
+                    <label for="">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="mail" name="mail" class="input-login" placeholder="Email" required>
+                    </label>
+                    <label for="">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" class="input-login" placeholder="Contrasena" required>
+                    </label>
+                    <button type="submit" class="login-button">Ingresar</button>
+                    <a href="#" class="pass-forgot">Olvidé mi contraseña</a>
+                    <a href="./Registrarse.html" class="pass-forgot">Crear una cuenta</a>
+
+                </div>
            </div>
        </div>
     

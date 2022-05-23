@@ -12,31 +12,65 @@
     height: 70vh;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,100,0.9), rgba(0,0,100,0.9) ), url(../../imagenes/fondo.jpg);
+    background-image: linear-gradient(rgba(0,0,100,0.9), rgba(0,0,100,0.9) ), url(../imagenes/fondo.jpg);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    border-radius: 10%;
         h2{
             color: #fff;
             font-size: $subtitulos;
             padding: 20px;
+            margin-bottom: 10px;
         }
         
 }
 
+.login-input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin:auto;
+    padding: 20px;
+}
+
+.user-login{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}
+
 .input-login{
     background: transparent;
-    border: 1px solid #fff;
+   border: none;
+    border-bottom: 2px solid #fff;
     margin: 6px 0;
     height: 32px;
-    border-radius: 20px;
-    padding: 0 10px;
+    
+    padding: 0 5px;
     box-sizing: border-box;
     outline: none;
     text-align: center;
     color: #fff;
+    padding: 20px;
 }
+.input-login:focus{
+    background-color: $vini-color;
+}
+
+.fa-envelope, .fa-lock {
+    font-size: 20px;
+    color: $color-fuente;
+    text-align: center;
+}
+
+
 
 .input-login::placeholder{
     color: rgb(227, 226, 226);
@@ -53,7 +87,27 @@
 	padding:10px 50px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px $primary-color;
-    font-size: $parrafos;   
+    font-size: $parrafos; 
+    margin-top: 30px; 
+}
+
+.login-button:hover{
+    background-color:transparent;
+    border: 1px solid $color-fuente;
+}
+       
+
+.pass-forgot{
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .login-form{
+        width: 80%;
+        border-radius: 2%;
+        margin: auto;
+       
+    }
 }
 
 
