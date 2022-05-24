@@ -17,7 +17,7 @@ html {
   background-position: center;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
-  background: url("../../imagenes/banner1.jpg");
+  background-image: url("../../imagenes/banner1.jpg");
   -webkit-animation: banner 10s infinite linear;
           animation: banner 10s infinite linear;
 }
@@ -90,30 +90,38 @@ html {
 @-webkit-keyframes banner {
   0% {
     background: url("../../imagenes/banner1.jpg");
+    background-size: cover;
   }
   50% {
     background: url("../../imagenes/banner1.jpg");
+    background-size: cover;
   }
   51% {
     background: url("../../imagenes/banner2.jpg");
+    background-size: cover;
   }
   100% {
     background: url("../../imagenes/banner2.jpg");
+    background-size: cover;
   }
 }
 
 @keyframes banner {
   0% {
     background: url("../../imagenes/banner1.jpg");
+    background-size: cover;
   }
   50% {
     background: url("../../imagenes/banner1.jpg");
+    background-size: cover;
   }
   51% {
     background: url("../../imagenes/banner2.jpg");
+    background-size: cover;
   }
   100% {
     background: url("../../imagenes/banner2.jpg");
+    background-size: cover;
   }
 }
 
@@ -2321,10 +2329,21 @@ legend{
 }
 
 @media screen and (max-width: 900px) {
-  .login-form {
+  .register-form {
     width: 80%;
+    height: 90vh;
+    padding-top: 20px;
     border-radius: 2%;
     margin: auto;
+  }
+  .register-form h2 {
+    font-size: 28px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .user-login {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -2397,6 +2416,20 @@ legend {
   background-color: #fff;
   -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+#exampleInputEmail1, #exampleTelephone, #exampleName, #exampleText {
+  border: none;
+  border-bottom: 2px solid #1C1B4D;
+  outline: none;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0%;
+}
+
+#exampleInputEmail1:focus, #exampleTelephone:focus, #exampleName:focus, #exampleText:focus {
+  outline: none;
 }
 
 legend {

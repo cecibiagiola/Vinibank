@@ -15,8 +15,8 @@ html{
     background-size: cover;
     background-position: center;
     transition: all .1s ease-in-out;
-    background: url('../../imagenes/banner1.jpg');
-    animation: banner 10s infinite linear;
+    background-image: url('../../imagenes/banner1.jpg');
+     animation: banner 10s infinite linear; 
 }
 
 .banner-content{
@@ -84,23 +84,27 @@ html{
     color: $color-fuente;;
 }
 
-@keyframes banner {
+ @keyframes banner {
     0%{
         background: url('../../imagenes/banner1.jpg');
+        background-size: cover;
     }
 
     50%{
         background: url('../../imagenes/banner1.jpg');
+        background-size: cover;
     }
 
     51%{
         background: url('../../imagenes/banner2.jpg');
+        background-size: cover;
     }
 
     100%{
         background: url('../../imagenes/banner2.jpg');
+        background-size: cover;
     }
-}
+} 
     
 
     

@@ -64,9 +64,24 @@ legend{
     margin-bottom: 10%;
     border-radius: 10px;
     background-color: $color-fuente;
-  box-shadow: 0 0 20px 1px hsla(0, 0%, 0%, 0.1)
+    box-shadow: 0 0 20px 1px hsla(0, 0%, 0%, 0.1)
+}
+
+#exampleInputEmail1, #exampleTelephone, #exampleName, #exampleText {
+    border: none;
+    border-bottom: 2px solid $vini-color ;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 0%;
+    }
+
+    #exampleInputEmail1:focus, #exampleTelephone:focus, #exampleName:focus, #exampleText:focus{
+        outline: none;
+       
+        
+    }
     
-} 
 
 legend{
     font-size: $subtitulos;
