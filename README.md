@@ -1,5 +1,5 @@
 # Vinibank
-Proyecto final creado para el curso de desarrollo web de CoderHouse
+Proyecto final creado para el curso de desarrollo web de CoderHouse en donde se utilizó HTML, CSS, Bootstrap, Sass y NodeJS.
 
 ## Autor 👩‍💻
 
